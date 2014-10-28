@@ -12,9 +12,10 @@ Algorithm :
 
 count =0
 for each label in sequence:
- count= count + search(label)
+
+ count= count + modified_search(label)
  
-where search works like this: 
+where modified_search works like this: 
  - search for that label
  - if not found : insert it and change the information accordingly at other nodes; return 0
  - if found: delete it and count number of end points greater than that  label i.e. information at the node right of it ; return count
